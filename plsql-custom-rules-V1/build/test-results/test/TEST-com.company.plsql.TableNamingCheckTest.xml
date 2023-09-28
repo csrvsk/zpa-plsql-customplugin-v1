@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.company.plsql.TableNamingCheckTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-27T03:56:01" hostname="CPC-ShivaKum-7Y" time="0.066">
+  <properties/>
+  <testcase name="testTableNameFollowsConvention()" classname="com.company.plsql.TableNamingCheckTest" time="0.048"/>
+  <testcase name="testTableNameDoesNotFollowConvention()" classname="com.company.plsql.TableNamingCheckTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck init
+INFO: Initializing TableNamingCheck and subscribing to CREATE_TABLE
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a node
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: XX_TABLE_NAME_TN
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Table name follows the naming conventions: XX_TABLE_NAME_TN
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a node
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: YY_ANOTHER_TABLE_TN
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Table name follows the naming conventions: YY_ANOTHER_TABLE_TN
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a node
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: EMP_TABLE_TN
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Table name follows the naming conventions: EMP_TABLE_TN
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck init
+INFO: Initializing TableNamingCheck and subscribing to CREATE_TABLE
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a node
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: INVALID_TABLE_NAME
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not follow the naming conventions: INVALID_TABLE_NAME
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a node
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: ZZ_INVALID
+Sep 26, 2023 11:56:01 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not follow the naming conventions: ZZ_INVALID
+]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Plugin-BuildDate: 2023-09-26T23:55:59-0400
+Plugin-ChildFirstClassLoader: false
+Plugin-Class: com.company.plsql.PlSqlCustomRulesPlugin
+Plugin-Description: PL/SQL Custom Rules
+Plugin-Developers: 
+Plugin-Display-Version: 1.0-SNAPSHOT
+Plugin-Key: myrules
+Plugin-License: 
+Plugin-Name: Company PL/SQL Rules
+Plugin-Version: 1.0-SNAPSHOT
+Sonar-Version: 9.9.1.69595
+SonarLint-Supported: false
+
