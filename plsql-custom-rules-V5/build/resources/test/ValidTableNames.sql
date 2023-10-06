@@ -1,0 +1,31 @@
+-- Valid names based on the given prefixes:
+
+CREATE TABLE AP_VALID_TABLE_NAME (
+    ID NUMBER PRIMARY KEY,
+    NAME VARCHAR2(50)
+);
+
+CREATE TABLE CM_ANOTHER_VALID_TABLE (
+    ID NUMBER PRIMARY KEY,
+    DESCRIPTION VARCHAR2(100)
+);
+
+CREATE TABLE PYE_CORRECT_NAME (
+    ID NUMBER PRIMARY KEY,
+    DATA VARCHAR2(100) NOT NULL
+);
+
+-- Some other valid names based on the exception rules:
+-- Valid due to TMP_ exception
+CREATE TABLE TMP_TEMPORARY_TMP (
+    ID NUMBER PRIMARY KEY,
+    DATA VARCHAR2(100) NOT NULL
+);
+
+-- Valid due to _GTT exception
+CREATE TABLE HR_DATA_GTT (
+    ID NUMBER PRIMARY KEY,
+    TEMP_DATA VARCHAR2(100) NOT NULL
+);
+
+
