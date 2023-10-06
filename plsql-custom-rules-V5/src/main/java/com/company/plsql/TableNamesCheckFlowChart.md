@@ -1,24 +1,62 @@
-## Flowchart for `TableNamingCheck` Rule Logic
+## Flow Chart for TableNamingCheck Class
 
-1. **Initialization**
-   → Subscribe to nodes with the `DdlGrammar.CREATE_TABLE` type.
-   → Log that the subscription to `CREATE_TABLE` nodes has been made.
+1. **Start**
+   ↓
 
-2. **Visit Node**
-   → When visiting a node of type `CREATE_TABLE`, fetch the table name.
-   → If no table name is present (i.e., the node doesn't have a child of type `UNIT_NAME`), log a warning and return.
+2. **Initialization**
+   - Subscribe to `DdlGrammar.CREATE_TABLE` nodes
+   - Log: Subscribed to `CREATE_TABLE` nodes
+   ↓
 
-3. **Table Name Checks**
-   → Convert table name to uppercase for uniformity in checks.
-   → **JSR/JSD Check:** If the table name starts with `JSR` or `JSD`, add an issue mentioning it should not start with `JSR` or `JSD`, log a warning, and return.
-   → **Max Length Check:** If the table name exceeds the defined maximum length (30 characters), add an issue indicating the name is too long, log a warning, and return.
-   → **Prefix Check:** Check if the table name starts with one of the valid prefixes. If not, add an issue indicating it does not start with a valid prefix, log a warning, and return.
+3. **Visit CREATE_TABLE Node**
+   - Log: Visiting a `CREATE_TABLE` node
+   ↓
 
-4. **Naming Convention Check**
-   → For tables starting with `TMP_`, they must end with either `_TEMP` or `_TMP`. If they don't, raise an issue.
-   → For other tables:
-    - Check if they match the provided regex pattern.
-    - Check if they end with `_GTT` or `_MV`.
-    - If neither condition is met, raise an issue stating the table does not follow the naming conventions.
+4. **Retrieve `UNIT_NAME` Child Node**
+   - Node doesn't have a child of type `UNIT_NAME`?
+   
+     - Yes: Log Warning and Return
+	 
+     - No: Proceed
+   ↓
 
-The above sequence ensures that checks are executed in a manner that helps identify and report non-compliant table names based on the prescribed rule logic.
+5. **Get Table Name and Convert to Uppercase**
+   - Log: Evaluating table name: `TABLE_NAME`
+   ↓
+
+6. **Check if Table Name Starts with JSR/JSD**
+   - Starts with `JSR` or `JSD`?
+   
+     - Yes: Log Warning, Add Issue (Table names should not start with JSR or JSD), and Return
+	 
+     - No: Proceed
+   ↓
+
+7. **Check Table Name Length**
+   - Exceeds 30 characters?
+   
+     - Yes: Log Warning, Add Issue (Table name exceeds the maximum allowed length), and Return
+	 
+     - No: Proceed
+   ↓
+
+8. **Validate Table Name Prefix**
+   - Has valid prefix?
+   
+     - Yes: Proceed
+	 
+     - No: Log Warning, Add Issue (Table name does not start with a valid prefix), and Return
+   ↓
+
+9. **Check Naming Conventions**
+   - For tables starting with `TMP_`: Must end with `_TEMP` or `_TMP`
+   - For other tables: Match with `TABLE_PATTERN` or end with `_GTT` or `_MV`
+   
+     - Matches?
+	 
+       - Yes: Log Info (Table name follows the naming conventions)
+	   
+       - No: Log Warning and Add Issue (Table name does not follow the naming conventions)
+   ↓
+
+10. **End**
