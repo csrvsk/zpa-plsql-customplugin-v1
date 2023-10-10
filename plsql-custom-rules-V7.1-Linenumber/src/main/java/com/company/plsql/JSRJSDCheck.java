@@ -58,7 +58,8 @@ public class JSRJSDCheck extends PlSqlCheck {
 
         // Strict rule check: Names starting with JSR or JSD are strictly prohibited
         if (tableName.startsWith("JSR") || tableName.startsWith("JSD")) {
-            String errorMessage = String.format("Line #%d: Table names should not start with JSR or JSD.", lineNumber);
+            //String errorMessage = String.format("Line #%d: Table names should not start with JSR or JSD.", lineNumber);
+            String errorMessage = String.format("Table names should not start with JSR or JSD. :Line #%d", lineNumber);
             LOGGER.warning(errorMessage);
             addIssue(tableNameNode.getToken(), errorMessage);
             return;
