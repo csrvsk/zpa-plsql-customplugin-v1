@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TableNamingCheckTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TableNamingCheckTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.company.plsql.html">com.company.plsql</a> &gt; TableNamingCheckTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.066s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testTableNameDoesNotFollowConvention()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTableNameFollowsConvention()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck init
+INFO: Subscribed to CREATE_TABLE nodes
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: AP_VALID_TABLE_NAME_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: CM_ANOTHER_VALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: PYE_CORRECT_NAME_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: TMP_TEMPORARY_TMP
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: HR_DATA_GTT
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck init
+INFO: Subscribed to CREATE_TABLE nodes
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: JSR_INVALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table names should not start with JSR or JSD: JSR_INVALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: JSD_ANOTHER_INVALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table names should not start with JSR or JSD: JSD_ANOTHER_INVALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: INVALID_NAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: INVALID_NAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: DATA_DESCRIPTION_TABLE
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: DATA_DESCRIPTION_TABLE
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: TMP_INVALID_TABLE_INVALID_TABLE_INVALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name exceeds the maximum allowed length: TMP_INVALID_TABLE_INVALID_TABLE_INVALID_TABLE_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: XYZ_ANOTHER_INVALID_TABLE
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: XYZ_ANOTHER_INVALID_TABLE
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: TEST_WRONG_NAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: TEST_WRONG_NAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: INVALIDNAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: INVALIDNAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: INVALID_NAME_WITHOUTPREFIX
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: INVALID_NAME_WITHOUTPREFIX
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: INVALIDNAME_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: INVALIDNAME_TN
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: IN1VALID_NAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: IN1VALID_NAME
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: XYZ
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not start with a valid prefix: XYZ
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: TMP_INVALID_ENDINGNAME_ABC
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not follow the naming conventions: TMP_INVALID_ENDINGNAME_ABC
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Visiting a CREATE_TABLE node
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+INFO: Evaluating table name: TMP_TEMPORARY_GTT
+Oct 10, 2023 3:43:30 PM com.company.plsql.TableNamingCheck visitNode
+WARNING: Table name does not follow the naming conventions: TMP_TEMPORARY_GTT
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Oct 10, 2023, 3:43:30 PM</p>
+</div>
+</div>
+</body>
+</html>
