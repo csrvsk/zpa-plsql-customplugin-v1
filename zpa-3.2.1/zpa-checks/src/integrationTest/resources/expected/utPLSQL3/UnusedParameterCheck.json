@@ -1,0 +1,37 @@
+{
+  "source/core/coverage/ut_coverage.pkb": [
+    154
+  ],
+  "source/core/types/ut_reporter_base.tpb": [
+    42,
+    48,
+    53,
+    57,
+    62,
+    66,
+    72,
+    77,
+    81,
+    86,
+    90,
+    95,
+    99,
+    104,
+    110,
+    114,
+    119,
+    123,
+    128,
+    134
+  ],
+  "source/expectations/data_values/ut_compound_data_value.tpb": [
+    197
+  ],
+  "source/expectations/data_values/ut_data_value.tpb": [
+    33,
+    33,
+    33,
+    33,
+    33
+  ]
+}

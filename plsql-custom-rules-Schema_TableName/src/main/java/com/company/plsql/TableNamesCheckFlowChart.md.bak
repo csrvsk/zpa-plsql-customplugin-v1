@@ -1,0 +1,40 @@
+## Flow Chart for TableNamingCheck Class - Version 2
+
+1. **Start**
+   ↓
+
+2. **Initialization**
+   - Subscribe to DdlGrammar.CREATE_TABLE nodes
+   - Log: Subscribed to CREATE_TABLE nodes
+   ↓
+
+3. **Visit CREATE_TABLE Node**
+   - Log: Visiting a CREATE_TABLE node
+   ↓
+
+4. **Retrieve UNIT_NAME Child Node**
+   - Node does not have a child of type UNIT_NAME?
+     - Yes: Log Warning and Return
+     - No: Proceed
+   ↓
+
+5. **Get Table Name and Convert to Uppercase**
+   - Log: Evaluating table name: TABLE_NAME
+   ↓
+
+6. **Check if Table Name is an Exception**
+   - Is Exception?
+     - Yes: Log Info (Table name follows the naming conventions) and Return
+     - No: Proceed
+   ↓
+
+7. **Match Table Name against TABLE_PATTERN**
+   - Matches?
+     - Yes:
+       - Starts with JSR or JSD?
+         - Yes: Log Warning and Add Issue (Table names should not start with JSR or JSD)
+         - No: Log Info (Table name follows the naming conventions)
+     - No: Log Warning and Add Issue (Table name does not follow the naming conventions)
+   ↓
+
+8. **End**

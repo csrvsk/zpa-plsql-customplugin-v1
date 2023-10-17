@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.company.plsql.JSRJSDCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-12T20:12:09" hostname="CPC-ShivaKum-7Y" time="0.067">
+  <properties/>
+  <testcase name="testJSRJSDCheckOnTables()" classname="com.company.plsql.JSRJSDCheckTest" time="0.067"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck init
+INFO: Subscribed to CREATE_TABLE nodes for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 4. Schema: default, Table: JSR_MY_TABLE
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+WARNING: Table name started with JSR or JSD at Line #4
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 7. Schema: default, Table: VALID_TABLE_1
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 10. Schema: default, Table: JSD_MY_JSD_TABLE
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+WARNING: Table name started with JSR or JSD at Line #10
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 13. Schema: default, Table: VALID_TABLE_2
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 16. Schema: default, Table: ANOTHER_VALID_TABLE
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 19. Schema: default, Table: JSR_ANOTHER_TABLE
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+WARNING: Table name started with JSR or JSD at Line #19
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Visiting a CREATE_TABLE node for JSR/JSD Check
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+INFO: Evaluating table name for JSR/JSD Check at line 22. Schema: DA, Table: JSD_MY_JSD_TABLE
+Oct 12, 2023 4:12:09 PM com.company.plsql.JSRJSDCheck visitNode
+WARNING: Table name started with JSR or JSD at Line #22
+]]></system-err>
+</testsuite>

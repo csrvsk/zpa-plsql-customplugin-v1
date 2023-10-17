@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Plugin-BuildDate: 2023-10-12T16:12:07-0400
+Plugin-ChildFirstClassLoader: false
+Plugin-Class: com.company.plsql.PlSqlCustomRulesPlugin
+Plugin-Description: CMiC PL/SQL Custom Rules
+Plugin-Developers: 
+Plugin-Display-Version: 1.0
+Plugin-Key: CMiC-Custom-PLSQL
+Plugin-License: 
+Plugin-Name: CMiC PL/SQL Custom Rules
+Plugin-Version: 1.0
+Sonar-Version: 9.9.1.69595
+SonarLint-Supported: false
+

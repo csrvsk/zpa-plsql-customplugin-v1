@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.company.plsql.TableNameConventionCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-13T20:48:16" hostname="CPC-ShivaKum-7Y" time="0.023">
+  <properties/>
+  <testcase name="testTableNameConvention()" classname="com.company.plsql.TableNameConventionCheckTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck init
+INFO: Subscribed to CREATE_TABLE nodes for TableNameConventionCheck
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 2. Schema: DA, Table: AP_MY_TABLE_TN
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 3. Schema: default, Table: TMP_MY_TABLE_TEMP
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 8. Schema: default, Table: INVALIDPREFIX_MY_TABLE_TN
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+WARNING: Invalid table name prefix at Line #8.
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 11. Schema: default, Table: AP_MY_TABLE_INVALIDSUFFIX
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+WARNING: Invalid table name suffix at Line #11.
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 14. Schema: default, Table: INVALIDTMP_MY_TABLE_TMP
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+WARNING: Table name found with invalid prefix and suffix at Line #14.
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 17. Schema: default, Table: TMP_MY_TABLE_INVALID
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+WARNING: Invalid TMP suffix for the table name at Line #17.
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+INFO: Evaluating table name convention at line 20. Schema: default, Table: INVALIDTMP_MY_TABLE_TX
+Oct 13, 2023 4:48:16 PM com.company.plsql.TableNameConventionCheck visitNode
+WARNING: Table name found with invalid prefix and suffix at Line #20.
+]]></system-err>
+</testsuite>
