@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.company.plsql.SchemaValidationCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-20T02:44:27" hostname="CPC-ShivaKum-7Y" time="0.052">
+  <properties/>
+  <testcase name="testSchemaValidationOnSqlFiles()" classname="com.company.plsql.SchemaValidationCheckTest" time="0.052"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck init
+INFO: Subscribed to CREATE_TABLE and SQLPLUS_COMMAND nodes for Schema Validation Check
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleSqlPlusCommand
+INFO: Handling SQLPLUS_COMMAND node
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleSqlPlusCommand
+INFO: Defined schema found using variable 'cmic_obj_backup': DA
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Evaluating for schema validation at line 7
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: tableNameNode: DB
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Schema from tableNameNode: DB
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Expected schema: DA
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Generated Message: The schema 'DB' does not match the defined schema 'DA' at Line #7
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Evaluating for schema validation at line 10
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: tableNameNode: DAR
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Schema from tableNameNode: DAR
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Expected schema: DA
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Generated Message: The schema 'DAR' does not match the defined schema 'DA' at Line #10
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Evaluating for schema validation at line 13
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: tableNameNode: test_table
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Schema from tableNameNode: none provided
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Expected schema: DA
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Generated Message: Missing expected schema 'DA' at Line #13
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Evaluating for schema validation at line 28
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: tableNameNode: just_table
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Schema from tableNameNode: none provided
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Expected schema: DA
+Oct 19, 2023 10:44:27 PM com.company.plsql.SchemaValidationCheck handleCreateTable
+INFO: Generated Message: Missing expected schema 'DA' at Line #28
+]]></system-err>
+</testsuite>
