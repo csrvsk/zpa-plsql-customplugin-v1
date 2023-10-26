@@ -47,6 +47,96 @@ public class SchemaValidationCheck extends PlSqlCheck {
         "CMIC_AUDIT_DA", "CMIC_GENERIC_AUDIT1", "CMIC_GENERIC_AUDIT2"
     ));
 
+    // List of basic SQL operations
+    private static final List<String> SQL_OPERATIONS = Arrays.asList(
+        "CREATE_TABLE", "ALTER_TABLE"
+    );
+    //"DROP_COMMAND"
+
+/*
+    private static final List<String> SQL_OPERATIONS = Arrays.asList(
+        "CREATE_TABLE", "ALTER_TABLE", "DROP_COMMAND",
+        "CREATE INDEX", "ALTER INDEX", "DROP INDEX",
+        "CREATE VIEW", "ALTER VIEW", "DROP VIEW",
+        "CREATE PROCEDURE", "ALTER PROCEDURE", "DROP PROCEDURE",
+        "CREATE FUNCTION", "ALTER FUNCTION", "DROP FUNCTION",
+        "CREATE TRIGGER", "ALTER TRIGGER", "DROP TRIGGER",
+        "CREATE SEQUENCE", "ALTER SEQUENCE", "DROP SEQUENCE",
+        "CREATE SYNONYM", "DROP SYNONYM",
+        "CREATE PACKAGE", "ALTER PACKAGE", "DROP PACKAGE",
+        "CREATE TYPE", "ALTER TYPE", "DROP TYPE"
+    );*/
+
+    @Override
+    public void init() {
+        for (String operation : SQL_OPERATIONS) {
+            subscribeTo(DdlGrammar.valueOf(operation));
+        }
+    }
+
+    @Override
+    public void visitNode(AstNode node) {
+        for (String operation : SQL_OPERATIONS) {
+            if (node.is(DdlGrammar.valueOf(operation))) {
+                handleSqlOperation(node, operation);
+                break;
+            }
+        }
+    }
+
+    private void handleSqlOperation(AstNode node, String operation) {
+        LOGGER.info("Starting handleSqlOperation for node: " + node);
+
+        AstNode tableNameNode = node.getFirstDescendant(PlSqlGrammar.UNIT_NAME);
+
+        if (tableNameNode == null) {
+            LOGGER.warning("Node does not have a descendant of type UNIT_NAME");
+            return;
+        }
+
+        List<AstNode> tableNameChildren = tableNameNode.getChildren();
+        String schemaName = null;
+
+        if (tableNameChildren.size() > 1) {
+            // We expect this to be schema.table structure
+            schemaName = tableNameChildren.get(0).getTokenOriginalValue().toUpperCase();
+            LOGGER.info("Schema name derived from tableNameChildren: " + schemaName);
+        } else {
+            LOGGER.info("tableNameChildren does not contain schema and table structure.");
+        }
+
+        LOGGER.info("Evaluating for schema validation at line " + tableNameNode.getTokenLine());
+        LOGGER.info("tableNameNode: " + (tableNameNode != null ? tableNameNode.getTokenOriginalValue() : "null"));
+        LOGGER.info("Schema from tableNameNode: " + (schemaName != null ? schemaName : "none provided"));
+
+        if (schemaName == null) {
+            String message = String.format("No schema is being used here at Line #%d.", tableNameNode.getTokenLine());
+            LOGGER.info("Issue added with message: " + message);
+            addIssue(tableNameNode, message);
+        } else if (!approvedSchemas.contains(schemaName.toUpperCase())) {
+            String message = String.format("Schema '%s' does not match the approved schemas at Line #%d.", schemaName, tableNameNode.getTokenLine());
+            LOGGER.info("Issue added with message: " + message);
+            addIssue(tableNameChildren.get(0), message);
+        } else {
+            LOGGER.info("Schema matches approved schema. No issues added.");
+        }
+
+        LOGGER.info("Finished handleSqlOperation for node: " + node);
+    }
+}
+
+/* This is a working copy - Uses only CREATE_TABLE node for schemaValidation.
+public class SchemaValidationCheck extends PlSqlCheck {
+
+    private static final Logger LOGGER = Logger.getLogger(SchemaValidationCheck.class.getName());
+
+    // List of approved schemas
+    private final Set<String> approvedSchemas = new HashSet<>(Arrays.asList(
+        "DA", "UIG", "DAR", "JSR", "JSD", "CMIC_BI", "CMIC_BI_RUNTIME", "CMIC_REPORT_VIEWS",
+        "CMIC_REPORT_WRITER", "CMIC_USER_DEFINED_VIEWS", "OWF_MGR", "CMIC_FK_IDX", "CMIC_GCS",
+        "CMIC_AUDIT_DA", "CMIC_GENERIC_AUDIT1", "CMIC_GENERIC_AUDIT2"
+    ));
+
     @Override
     public void init() {
         subscribeTo(DdlGrammar.CREATE_TABLE);
@@ -93,14 +183,14 @@ public class SchemaValidationCheck extends PlSqlCheck {
         } else if (!approvedSchemas.contains(schemaName.toUpperCase())) {
             String message = String.format("Schema '%s' does not match the approved schemas at Line #%d.", schemaName, tableNameNode.getTokenLine());
             LOGGER.info("Issue added with message: " + message);
-            addIssue(tableNameNode, message);
+            addIssue(tableNameChildren.get(0), message);
         } else {
             LOGGER.info("Schema matches approved schema. No issues added.");
         }
 
         LOGGER.info("Finished handleTableCreation for node: " + node);
     }
-}
+}*/
 
 /*public class SchemaValidationCheck extends PlSqlCheck {
 

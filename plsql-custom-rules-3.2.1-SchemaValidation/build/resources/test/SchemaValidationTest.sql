@@ -26,3 +26,7 @@ INSERT INTO DA.my_table (id, name) VALUES (1, 'Test');
 
 -- For no schema provided
 CREATE TABLE just_table (id NUMBER, name VARCHAR2(100)); -- Noncompliant {{No schema is being used here at Line #28.}}
+ALTER TABLE DB.another_table ADD id NUMBER; -- Noncompliant {{Schema 'DB' does not match the approved schemas at Line #29.}}
+ALTER TABLE DB.another_table ADD description VARCHAR2(255); -- Noncompliant {{Schema 'DB' does not match the approved schemas at Line #30.}}
+
+-- DROP TABLE DB.another_table; -- Noncompliant {{Schema 'DB' does not match the approved schemas at Line #32.}}

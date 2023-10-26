@@ -1,63 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.company.plsql.SchemaValidationCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T18:55:52" hostname="CPC-ShivaKum-7Y" time="0.039">
+<testsuite name="com.company.plsql.SchemaValidationCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-26T13:52:31" hostname="CPC-ShivaKum-7Y" time="0.056">
   <properties/>
-  <testcase name="testSchemaValidationOnSqlFiles()" classname="com.company.plsql.SchemaValidationCheckTest" time="0.039"/>
+  <testcase name="testSchemaValidationOnSqlFiles()" classname="com.company.plsql.SchemaValidationCheckTest" time="0.056"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Starting handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=7 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+  <system-err><![CDATA[Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=7 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Schema name derived from tableNameChildren: DB
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Evaluating for schema validation at line 7
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: tableNameNode: DB
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Schema from tableNameNode: DB
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Issue added with message: Schema 'DB' does not match the approved schemas at Line #7.
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Finished handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=7 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Starting handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=10 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=7 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=10 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Schema name derived from tableNameChildren: DAD
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Evaluating for schema validation at line 10
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: tableNameNode: DAD
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Schema from tableNameNode: DAD
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Issue added with message: Schema 'DAD' does not match the approved schemas at Line #10.
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Finished handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=10 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Starting handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=13 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=10 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=13 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: tableNameChildren does not contain schema and table structure.
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Evaluating for schema validation at line 13
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: tableNameNode: test_table
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Schema from tableNameNode: none provided
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Issue added with message: No schema is being used here at Line #13.
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Finished handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=13 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Starting handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=28 tokenColumn=0
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=13 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: ALTER_TABLE tokenValue='ALTER' tokenLine=16 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema name derived from tableNameChildren: DA
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Evaluating for schema validation at line 16
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: tableNameNode: DA
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema from tableNameNode: DA
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema matches approved schema. No issues added.
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: ALTER_TABLE tokenValue='ALTER' tokenLine=16 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=28 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: tableNameChildren does not contain schema and table structure.
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Evaluating for schema validation at line 28
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: tableNameNode: just_table
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Schema from tableNameNode: none provided
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
 INFO: Issue added with message: No schema is being used here at Line #28.
-Oct 25, 2023 2:55:52 PM com.company.plsql.SchemaValidationCheck handleTableCreation
-INFO: Finished handleTableCreation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=28 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: CREATE_TABLE tokenValue='CREATE' tokenLine=28 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: ALTER_TABLE tokenValue='ALTER' tokenLine=29 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema name derived from tableNameChildren: DB
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Evaluating for schema validation at line 29
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: tableNameNode: DB
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema from tableNameNode: DB
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Issue added with message: Schema 'DB' does not match the approved schemas at Line #29.
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: ALTER_TABLE tokenValue='ALTER' tokenLine=29 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Starting handleSqlOperation for node: ALTER_TABLE tokenValue='ALTER' tokenLine=30 tokenColumn=0
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema name derived from tableNameChildren: DB
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Evaluating for schema validation at line 30
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: tableNameNode: DB
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Schema from tableNameNode: DB
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Issue added with message: Schema 'DB' does not match the approved schemas at Line #30.
+Oct 26, 2023 9:52:31 AM com.company.plsql.SchemaValidationCheck handleSqlOperation
+INFO: Finished handleSqlOperation for node: ALTER_TABLE tokenValue='ALTER' tokenLine=30 tokenColumn=0
 ]]></system-err>
 </testsuite>

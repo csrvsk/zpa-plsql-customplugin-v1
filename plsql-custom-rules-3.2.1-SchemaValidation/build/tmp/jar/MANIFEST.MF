@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Plugin-BuildDate: 2023-10-25T14:55:49-0400
+Plugin-BuildDate: 2023-10-26T09:52:28-0400
 Plugin-ChildFirstClassLoader: false
 Plugin-Class: com.company.plsql.PlSqlCustomRulesPlugin
 Plugin-Description: CMiC PL/SQL Custom Rules

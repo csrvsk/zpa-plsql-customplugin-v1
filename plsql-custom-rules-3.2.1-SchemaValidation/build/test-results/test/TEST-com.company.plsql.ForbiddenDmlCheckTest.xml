@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.company.plsql.ForbiddenDmlCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T18:55:51" hostname="CPC-ShivaKum-7Y" time="0.209">
+<testsuite name="com.company.plsql.ForbiddenDmlCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-26T13:52:31" hostname="CPC-ShivaKum-7Y" time="0.215">
   <properties/>
-  <testcase name="test()" classname="com.company.plsql.ForbiddenDmlCheckTest" time="0.209"/>
+  <testcase name="test()" classname="com.company.plsql.ForbiddenDmlCheckTest" time="0.215"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
