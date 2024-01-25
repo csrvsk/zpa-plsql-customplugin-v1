@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.company.plsql.ColumnDataTypeCheckTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-25T13:15:55" hostname="CPC-ShivaKum-7Y" time="0.221">
+  <properties/>
+  <testcase name="shouldIdentifySpecialityAndUnapprovedDataTypes()" classname="com.company.plsql.ColumnDataTypeCheckTest" time="0.221"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck init
+INFO: Subscribed to TABLE_COLUMN_DEFINITION nodes for DataType Check
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: NUMBER
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: VARCHAR2
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: DATE
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: CLOB
+Jan 25, 2024 8:15:55 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is specialty. Adding issue.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: NUMBER
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: VARCHAR2
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: BLOB
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is specialty. Adding issue.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: TIMESTAMP
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is specialty. Adding issue.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: RAW
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is specialty. Adding issue.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: NUMBER
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: VARCHAR2
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: Starting the visit for TABLE_COLUMN_DEFINITION node.
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType value: DATE
+Jan 25, 2024 8:15:56 AM com.company.plsql.ColumnDATATYPECheck visitNode
+INFO: DataType is regular. No action needed.
+]]></system-err>
+</testsuite>
